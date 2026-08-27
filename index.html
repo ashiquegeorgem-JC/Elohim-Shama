@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <title>Elohim Shama — Bethesda AG Church</title>
+    <meta name="description" content="Bethesda AG Church Half Night Prayer & Midnight Prayer Schedule Management System" />
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tabler Icons CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration matching Bethesda AG Church Web Design -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+              display: ['"Times New Roman MT"', '"Times New Roman"', 'Times', 'serif'],
+              serif: ['"Times New Roman MT"', '"Times New Roman"', 'Times', 'serif'],
+            },
+            colors: {
+              ivory: '#FCFAF5',
+              cream: '#F7F4EC',
+              sand: '#EAE4D9',
+              gold: {
+                DEFAULT: '#C5A059',
+                light: '#F4EBD7',
+                dark: '#9E7B35',
+                hover: '#B58F47',
+              },
+              charcoal: '#1C252B',
+              'navy-deep': '#0D1926',
+              sage: '#F2F5F3',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth transitions and scrollbars */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #EAE4D9 #FCFAF5;
+      }
+      *::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      *::-webkit-scrollbar-track {
+        background: #FCFAF5;
+      }
+      *::-webkit-scrollbar-thumb {
+        background-color: #EAE4D9;
+        border-radius: 4px;
+      }
+      /* Soft glass effect */
+      .glass {
+        background: rgba(252, 250, 245, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body class="bg-[#FCFAF5] text-[#1C252B] font-sans antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
